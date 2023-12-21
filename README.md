@@ -1,4 +1,11 @@
-# mail reporter bash+python
+### mail reporter bash+python
+a script for monitoring the state of the system with sending it to the mail
+
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+
 **Crontab**
 ```
 crontab -e

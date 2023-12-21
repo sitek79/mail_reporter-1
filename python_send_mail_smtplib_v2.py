@@ -54,14 +54,15 @@ with open(body_message, encoding='utf-8') as fp:
     #msg = EmailMessage()
     html = fp.read()
 
-filepath = "/opt/scripts/monitoring/attach.txt"
+#filepath = "/opt/scripts/monitoring/attach.txt"
+filepath = "./attach.txt"
 #filepath = "/root/scripts/rkhunter.log"
 basename = os.path.basename(filepath)
 filesize = os.path.getsize(filepath)
 
 msg = MIMEMultipart('alternative')
 msg['Subject'] = subject
-msg['From'] = 'Report from Oracle Prog <' + sender + '>'
+msg['From'] = 'Report from PyCharm IDE <' + sender + '>'
 msg['To'] = ', '.join(recipients)
 msg['Reply-To'] = sender
 msg['Return-Path'] = sender
