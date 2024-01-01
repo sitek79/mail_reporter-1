@@ -12,8 +12,8 @@ crontab -e
 30 3,6,9,12,15,18,21 * * * cd /opt/scripts/monitoring && /usr/bin/python3 /opt/scripts/monitoring/python_send_mail_smtplib_v2.py >> /opt/scripts/monitoring/protocol_smtplib_v2.txt 2>&1
 ```
 
+Измените переменные с настройками почтового сервера под себя в файле <settings.py> 
 ```
-cat settings.py
 server = 'smtp.mail.ru'
 user = 'box@inbox.ru'
 password = 'password'
