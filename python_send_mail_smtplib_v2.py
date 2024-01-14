@@ -36,6 +36,13 @@ def run_bash_script():
 
 def run_bat_file():
     print("Windows bat-file.bat running")
+    script = "./monitoring.bat"
+    result = subprocess.run( script, shell=True )
+    if result.returncode == 0:
+        print( "Subprocess executed successfully." )
+    else:
+        print( f"Subprocess failed with return code {result.returncode}." )
+
 
 # print( platform.system() )
 if sys.platform.startswith( 'freebsd' ):
